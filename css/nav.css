@@ -1,0 +1,58 @@
+/* Style the navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #D43F52;
+  top: 0; 
+  width: 100%;
+  font-style: italic;
+  font-size: 25;
+ 
+}
+
+  .main {
+  margin-top: 30px; }
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: highlight;
+}
+
+.navbar a:hover {
+  background-color: black;
+  color: #D43F52;
+}
+
+.navbar a.active {
+  background-color: black;
+  color: #D43F52;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+ 
+}
